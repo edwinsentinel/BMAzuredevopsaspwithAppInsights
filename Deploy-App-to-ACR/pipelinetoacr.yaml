@@ -9,7 +9,7 @@ variables:
   - name: backendServiceArm
     value: 'bmproject-service-connection'
   - name: backendAzureRmResourceGroupName
-    value: 'devops-journey-rg'
+    value: 'bmproject-rg'
   - name: backendAzureRmStorageAccountName
     value: 'bmprojectazuredevops'
   - name: backendAzureRmContainerName
