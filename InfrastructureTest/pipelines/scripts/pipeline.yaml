@@ -11,11 +11,11 @@ pr: none
 
 variables:
   - name: backendServiceArm
-    value: 'azure-devops-journey-service-connection'
+    value: 'azure-bmproject-service-connection'
   - name: backendAzureRmResourceGroupName
-    value: 'devops-journey-rg'
+    value: 'bmproject-rg'
   - name: backendAzureRmStorageAccountName
-    value: 'devopsjourneyazuredevops'
+    value: 'bmprojectazuredevops'
   - name: backendAzureRmContainerName
     value: 'tfstate'
   - name: backendAzureRmKey
@@ -29,8 +29,8 @@ variables:
   - name: dockerfile
     value: '$(Build.SourcesDirectory)/aspnet-core-dotnet-core/Dockerfile'
   - name: containerRegistry
-    value: 'devopsjourneyacr.azurecr.io'
-  - group: devopsjourney
+    value: 'bmprojectacr.azurecr.io'
+  - group: bmproject
 
 stages :
   - stage: validate
@@ -189,8 +189,8 @@ stages :
           inlineScript: |
             #!/usr/bin/env bash
             set -x
-            AKS_RG="devopsjourneyaks-rg"
-            AKS_NAME="devopsjourneyaks"
+            AKS_RG="bmprojectaks-rg"
+            AKS_NAME="bmprojectaks"
             # Get AKS Credentials
             az aks get-credentials -g $AKS_RG -n $AKS_NAME --admin
             # Create secret
