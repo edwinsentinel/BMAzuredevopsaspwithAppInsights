@@ -6,7 +6,7 @@ provider "azurerm" {
 terraform {
     backend "azurerm" {
       resource_group_name = "Bmproject-rg"   
-      storage_account_name = "BmProjectazuredevops"
+      storage_account_name = "bmprojectazuredevops"
       container_name = "terraform.tfstate`"
     }
 }
