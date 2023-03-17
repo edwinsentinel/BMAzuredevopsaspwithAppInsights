@@ -10,6 +10,9 @@ The structure of the project is as follows:
 -Test your deployed Azure resources using automated testing.
 -Reviewing monitoring and alerting using Application & Container Insights.
 
+![azureapp](https://user-images.githubusercontent.com/7680114/225842586-217876aa-f690-4bdd-bb5b-a972d315287f.png)
+
+
 Prerequisites.
 -code editor preferably vs code.
 -terraform.
